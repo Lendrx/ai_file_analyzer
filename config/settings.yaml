@@ -1,0 +1,15 @@
+watch_directory: "./data"
+output_directory: "./output"
+model_settings:
+  model_name: "mistral"  # oder "llama2" oder "mixtral"
+  base_url: "http://localhost:11434"
+  temperature: 0.1
+analysis_settings:
+  max_rows_preview: 1000
+  file_types:
+    - ".csv"
+    - ".xlsx"
+    - ".xls"
+    - ".json"
+    - ".parquet"
+    - ".txt"

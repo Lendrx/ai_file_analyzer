@@ -1,0 +1,62 @@
+# Konfigurationsdatei für den AI File Analyzer
+
+# Grundeinstellungen
+input_directory: "data/input"
+output_directory: "data/output"
+temp_directory: "data/temp"
+log_directory: "logs"
+
+# Datenvalidierungsregeln
+validation_rules:
+  text_content:
+    nicht_null: true
+    min_length: 10
+    max_length: 10000
+    sprachen: ["de", "en"]
+  
+  metadata:
+    nicht_null: true
+    erforderliche_felder: ["datum", "quelle", "autor"]
+    
+  numerische_daten:
+    wertebereich: [-1000, 1000]
+    precision: 2
+
+# Vorverarbeitungsstrategien
+preprocessing:
+  text:
+    lowercase: true
+    remove_special_chars: true
+    lemmatization: true
+    
+  missing_value_strategy:
+    numerisch: "mean"
+    kategorial: "mode"
+    text: "drop"
+
+# Modellkonfiguration
+model_settings:
+  embedding_size: 768
+  max_sequence_length: 512
+  batch_size: 32
+  learning_rate: 0.001
+
+# Reporting
+report_settings:
+  format: "yaml"
+  detail_level: "full"  # options: basic, full
+  include_visualizations: true
+  save_intermediate_results: true
+
+# Performance-Einstellungen
+performance:
+  num_workers: 4
+  use_gpu: true
+  memory_limit: "8GB"
+
+# Logging-Konfiguration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file_rotation: true
+  max_file_size: "10MB"
