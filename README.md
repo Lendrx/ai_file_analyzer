@@ -93,14 +93,5 @@ Die `config.yaml` erlaubt das Anpassen von:
 
 ## 📚 Weiterführende Ressourcen
 
-- [Ollama Dokumentation](https://ollama.ai/docs)
-- [Prompt Engineering Guide](https://www.promptingguide.ai)
-- [LangChain Dokumentation](https://python.langchain.com/docs/get_started/introduction.html)
-
-## 🤝 Beitragen
-
-Fühlen Sie sich frei, Issues zu erstellen oder Pull Requests einzureichen. Jeder Beitrag ist willkommen!
-
-## 📝 Lizenz
-
-MIT License - siehe [LICENSE](LICENSE)
+- [Ollama Download](https://ollama.com)
+- [Ollama Docs](https://github.com/ollama/ollama)
