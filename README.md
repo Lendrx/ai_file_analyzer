@@ -1,6 +1,6 @@
 # Simple LLM File Analyzer with Ollama
 
-Ein einfaches Python-Projekt, das zeigt, wie man lokale LLMs (Large Language Models) mit Ollama nutzt, um Dateien zu analysieren und zu verstehen.
+Wie man lokale LLMs (Large Language Models) mit Ollama nutzt, um Dateien zu analysieren und zu verstehen.
 
 ## 🎯 Über das Projekt
 
