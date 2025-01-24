@@ -1,4 +1,4 @@
-# Simple LLM File Analyzer with Ollama
+# Simple LLM - Ollama
 
 Wie man lokale LLMs (Large Language Models) mit Ollama nutzt, um Dateien zu analysieren und zu verstehen.
 
